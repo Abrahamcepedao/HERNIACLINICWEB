@@ -382,6 +382,11 @@ p, a, li, select{
 .link__inner__container p {
 	margin-right: 10px;
 	color: var(--blue__primary);
+	font-weight: bolder;
+	transition: all 0.3s ease-in-out;
+}
+.link__inner__container p:hover {
+	margin-right: 20px;
 }
 
 
@@ -903,27 +908,24 @@ p, a, li, select{
 
 
 /*----------Go back button----------*/
-.goback{
+.goback, .whatsapp{
     position: fixed;
     z-index: 999999;
     bottom: 25px;
     right: 30px;
 }
-.goback a{
+.goback i, .whatsapp i{
     color: rgb(3,126,243);
     text-decoration: none;
+	transition: transform 450ms;
+	text-shadow: 5px 5px 5px 5px rgba(25, 25, 25, 0.25), 0 10px 10px rgba(25, 25, 25, 0.22);
+
 }
-.goback i{
-    text-shadow: 5px 5px 5px 5px rgba(25, 25, 25, 0.25), 0 10px 10px rgba(25, 25, 25, 0.22);
+.goback i:hover, .whatsapp i:hover {
+	transform: scale(1.2);
 }
 
+
 .whatsapp {
-	position: fixed;
-	z-index: 99999999;
-	bottom: 30px;
     right: 80px;
-}
-.whatsapp_image{
-	width: 40px;
-	height: 40px;
 }
