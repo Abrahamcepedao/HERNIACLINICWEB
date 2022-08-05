@@ -125,6 +125,17 @@ font-family: 'Nunito', sans-serif;
 	color: var(--black);
 	font-weight: bold;
 }
+.blue__subtitle {
+	font-size: 30px;
+	font-weight: bold;
+	color: var(--blue__primary);
+}
+/* 576px */
+@media (max-width: 576px) {
+	.blue__subtitle {
+		font-size: 22px;
+	}
+}
 
 /* <--title--> */
 .title {
@@ -717,7 +728,7 @@ p, a, li, select{
 
 
 /* <-----responsive-----> */
-/* 992px */
+/* 776 */
 @media (max-width: 776px) {
 	.services__header {
 		display: block;
@@ -751,22 +762,21 @@ p, a, li, select{
 
 .comparison__title__container {
 	width: auto;
-	max-width: 600px;
 	margin: auto;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: flex-end;
 }
 .comparison__title__container h2 {
 	margin-right: 20px;
 }
 .comparison__rectangle {
+	width: 50px;
 	max-width: 50px;
 	height: 8px;
 	background: var(--blue__primary);
-	flex: 1;
 	position: relative;
-	float: left;
+	//margin: auto;
 }
 
 
@@ -859,6 +869,50 @@ p, a, li, select{
 .image__overlay img {
 	width: 50%;
 }
+
+
+/* <-----responsive-----> */
+/* 992 */
+@media (max-width: 992px) {
+	.frame__container {
+		display: block;
+	}
+	.image__container {
+		height: 400px;
+	}
+	.image__overlay img {
+		width: 200px;
+	}
+	.info__container {
+		height: auto;
+	}
+}
+/* 776 */
+@media (max-width: 776px) {
+	.comparison__title__container h2 {
+		font-size: 30px;
+	}
+	.info__inner__container, .square__container {
+		padding: 20px;
+	}
+}
+
+/* 696 */
+@media (max-width: 776px) {
+	.comparison__title__container  {
+		display: block;
+		text-align: center;
+	}
+	.comparison__title__container h2 {
+		margin-left: 0px;
+		margin-bottom: 20px;
+	}
+	.comparison__rectangle {
+		margin: auto;
+	}
+}
+
+
 
 /* <---------Other Services--------->*/
 .services {
