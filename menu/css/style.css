@@ -218,6 +218,7 @@ header {
   z-index: 3;
   background-color: #1A4FD1;
   overflow: auto;
+  list-style: none;
   /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
   -webkit-overflow-scrolling: touch;
   visibility: hidden;

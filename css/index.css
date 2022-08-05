@@ -261,6 +261,8 @@ p, a, li, select{
 	font-weight: bolder;
 	text-decoration: underline;
 	cursor: pointer;
+	position: relative;
+	top: -5px;
 }
 .social__container {
 	margin-right: 20px;
@@ -421,7 +423,7 @@ p, a, li, select{
 		padding-right: 20px;
 	}
 	.landing__info__container div {
-		width: 150px;
+		width: 170px;
 	}
 	.landing__image__container {
 		padding-left: 0px;
@@ -443,9 +445,6 @@ p, a, li, select{
 	.landing__info__container {
 		text-align: center;
 		padding-right: 20px;
-	}
-	.landing__info__container div {
-		width: 150px;
 	}
 	.landing__image__container {
 		padding-left: 0px;
@@ -552,6 +551,7 @@ p, a, li, select{
 .hernia__inner__container {
 	width: 95%;
 	padding: 100px 0px;
+	padding-bottom: 0px;
 	max-width: 1600px;
 	margin: auto;
 	display: flex;
@@ -635,7 +635,7 @@ p, a, li, select{
 /* <---------Services--------->*/
 .services__container {
 	width: 100%;
-	padding: 100px 50px 100px 50px;
+	padding: 50px;
 	background: var(--lightgray);
 }
 
@@ -652,10 +652,9 @@ p, a, li, select{
 	justify-content: space-between;
 	align-items: center;
 	flex-direction: row;
-	margin-bottom: 50px;
 	max-width: 1200px;
 	margin: auto;
-	margin-bottom: 150px;
+	margin-bottom: 25px;
 }
 
 /* services list */
@@ -914,42 +913,6 @@ p, a, li, select{
 
 
 
-/* <---------Other Services--------->*/
-.services {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-	padding-top: 150px;
-}
-.services h2 {
-    margin-bottom: 75px;
-}
-.other__services__list {
-    margin: auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-direction: row;
-	padding: 40px 20px 30px 20px;
-}
-.other__services__item {
-	background: var(--white);
-	border-radius: 10px;
-	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-	padding: 20px;
-	text-align: left;
-	min-width: 300px;
-	margin-right: 30px;
-}
-.other__services__item img {
-	width: 80px;
-	height: auto;
-	position: relative;
-	top: -60px;
-	margin-bottom: -40px;
-}
-
 
 
 /* <---------Reviews--------->*/
@@ -1005,8 +968,13 @@ p, a, li, select{
 }
 
 /* image */
-.appointment__image {
-
+.appointment__image {
+	flex: 0.1;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.appointment__image2 {
+	display: none;
 }
 
 /* form */
@@ -1023,6 +991,9 @@ p, a, li, select{
 	column-gap: 30px;
 	row-gap: 30px;
 	margin-bottom: 30px;
+}
+.inputs__container::before {
+	content: none;
 }
 .input_outer__container {
 	width: 100%;
@@ -1061,6 +1032,51 @@ p, a, li, select{
 	
 }
 
+/* <-----responsive-----> */
+/* 1400 */
+@media (max-width: 1400px) {
+	.appointment {
+		padding: 50px;
+	}
+}
+/* 1270 */
+@media (max-width: 1270px) {
+	.inputs__container {
+		column-gap: 20px;
+	}
+	.appointment__container {
+		display: block;
+	}
+	.appointment__image1 {
+		display: none;
+	}
+	.appointment__image2 {
+		display: block;
+		width: 100%;
+		max-width: 500px;
+		margin: auto;
+		margin-bottom: 50px;
+	}
+	.mapouter {
+		height: 400px;
+		margin-bottom: 50px;
+	}
+	.mapa_iframe {
+		height: 400px;
+	}
+}
+/* 576 */
+@media (max-width: 576px) {
+	.inputs__container {
+		grid-template-columns: auto;
+		row-gap: 10px;
+		margin-bottom: 0px;
+	}
+	.textarea_outer__container {
+		margin-bottom: 20px;
+	}
+}
+
 
 /* <---------Footer--------->*/
 .footer {
@@ -1070,13 +1086,16 @@ p, a, li, select{
 }
 
 .footer__container {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	column-gap: 30px;
 	width: 100%;
 	max-width: 1200px;
 	margin: auto;
 	margin-bottom: 50px;
+}
+.footer__container::before {
+	content: none;
 }
 
 /* logo and phrase */
@@ -1084,7 +1103,7 @@ p, a, li, select{
 	width: 350px;
 }
 .footer__logo img {
-	width: 120px;
+	width: 200px;
 	height: auto;
 	margin-bottom: 30px;
 }
@@ -1114,7 +1133,7 @@ p, a, li, select{
 /* contact info */
 .contact__item {
 	display: flex;
-	justify-content: space-between;
+	justify-content: left;
 	align-items: flex-start;
 	flex-direction: row;
 	margin-bottom: 20px;
@@ -1126,9 +1145,35 @@ p, a, li, select{
 }
 .contact__item p {
 	flex: 1;
-	max-width: 200px;
+	max-width: 150px;
 }
 
+/* <-----responsive-----> */
+/* 992 */
+@media (max-width: 992px) {
+	.footer__logo {
+		grid-column: 1 / span 3;
+		text-align: center;
+		width: 100%;
+	}
+	.footer__container {
+		grid-template-columns: auto auto auto;
+		row-gap: 30px;
+	}
+	.phrase {
+		font-size: 20px;
+	}
+}
+
+/* 576 */
+@media (max-width: 576px) {
+	.footer__logo {
+		grid-column: 1 / span 2;
+	}
+	.footer__container {
+		grid-template-columns: auto auto;
+	}
+}
 
 /* <---------Copyright--------->*/
 .copyright__container {
@@ -1152,24 +1197,35 @@ p, a, li, select{
 
 
 /*----------Go back button----------*/
-.goback, .whatsapp{
-    position: fixed;
+.fixed__links {
+	background: var(--white);
+	border-radius: 10px;
+	padding: 10px 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	border: 1px solid var(--blue__secondary);
+	position: fixed;
     z-index: 999999;
     bottom: 25px;
-    right: 30px;
+    right: 25px;
+	color: var(--blue__primary);
 }
+
+
 .goback i, .whatsapp i{
     color: rgb(3,126,243);
+	font-size: 30px;
     text-decoration: none;
 	transition: transform 450ms;
 	text-shadow: 5px 5px 5px 5px rgba(25, 25, 25, 0.25), 0 10px 10px rgba(25, 25, 25, 0.22);
 
 }
+.goback i {
+	margin-left: 20px;
+}
 .goback i:hover, .whatsapp i:hover {
 	transform: scale(1.2);
 }
 
-
-.whatsapp {
-    right: 80px;
-}
