@@ -38,6 +38,10 @@
     <!-- Index css-->
     <link rel="stylesheet" href="css/index.css">
 
+    <!-- menu styles -->
+    <link rel="stylesheet" href="./menu/css/reset.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="./menu/css/style.css"> <!-- Resource style -->
+
     <!--------------Google Fonts-------------->
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bowlby+One+SC|Lilita+One&display=swap"
         rel="stylesheet">
@@ -58,7 +62,7 @@
 <header id="header">
     <nav class="nav__container">
         <div class="logo__container">
-            <a href="../index.html">
+            <a href="index.html">
                 <img src="../img/herniaLogo.png" alt="Logo" class="logo">
             </a>
         </div>
@@ -70,15 +74,10 @@
                 <a href="https://ceciminv.com.mx/about" class="nav__link">About Us</a>
             </div>
             <div class="nav__item">
-                <button onclick="dropdown()" class="dropbtn nav__link">Services<i style="margin-left: 5px; position:relative; top: 1.5px;" class="fas fa-angle-right"></i></button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
+                <a href="#services" class="nav__link">Services</a>
             </div>
             <div class="nav__item">
-                <a href="#" class="nav__link">Faq's</a>
+                <a href="#appointment" class="nav__link">Faq's</a>
             </div>
 
             <div class="nav__links">
@@ -100,8 +99,57 @@
                 </div>
             </div>
         </div>
+
+        <a href="#0" class="cd-nav-trigger mobile__ham">Menu<span class="cd-icon"></span></a>
+        
+        
+        
     </nav>
 </header>
+
+<nav class="mobile__nav">
+    <ul class="cd-primary-nav">
+        <li><a class="mobile-link" href="#0">Home</a></li>
+        <li><a class="mobile-link" href="#0">About Us</a></li>
+        <li><a class="mobile-link" href="#services">Services</a></li>
+        <li><a class="mobile-link" href="#0">Faq's</a></li>
+        <li><a class="mobile-link" href="#appointment">Contact Us</a></li>
+        <li>
+            <div class="nav__links" style="justify-content: center;">
+                <div class="nav__lang__container">
+                    <a href="index_es.html">
+                        <p style="color: white;">es</p>
+                    </a>
+                </div>
+                <div class="social__container">
+                    <a href="https://www.instagram.com/drrodolfoaparicio/?hl=es-la" target="_blank"><i
+                            class="fab fa-instagram fa-2x social__icon" style="color: white !important;"></i></a>
+                    <a href="https://www.facebook.com/DrRodolfoAparicio/" target="_blank"><i
+                            class="fab fa-facebook-square fa-2x social__icon" style="color: white !important;"></i></a>
+                </div>
+                <div>
+                    <a href="#appointment">
+                        <button class="white__button">Contact Us</button>
+                    </a>
+                </div>
+            </div>
+        </li>
+    </ul>
+    
+</nav>
+
+<div class="cd-overlay-nav">
+    <span></span>
+</div> <!-- cd-overlay-nav -->
+
+<div class="cd-overlay-content">
+    <span></span>
+</div> <!-- cd-overlay-content -->
+
+
+
+
+
 <body>
     <!-- landing -->
     <div class="landing__container">
@@ -602,6 +650,11 @@
     </a></div>
 </body>
 <!---------------Javascript----------------->
+<!-- Menu -->
+<script src="./menu/js/jquery-2.1.1.js"></script>
+<script src="./menu/js/velocity.min.js"></script>
+<script src="./menu/js/main.js"></script> <!-- Resource jQuery -->
+
 
 <!--Var menu controler-->
 <script type="text/javascript">
