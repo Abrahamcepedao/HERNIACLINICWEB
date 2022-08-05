@@ -445,13 +445,14 @@ p, a, li, select{
 
 /* <---------Contact info--------->*/
 .links__container {
-	width: 100%;
+	width: 95%;
 	max-width: 1500px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: auto;
 	position: relative;
+	margin: auto;
 	margin-top: -100px;
 	margin-bottom: -38px;
 	border-radius: 10px;
@@ -495,6 +496,35 @@ p, a, li, select{
 	margin-right: 20px;
 }
 
+/* <-----responsive-----> */
+/* 992px */
+@media (max-width: 992px) {
+	.links__container {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 20px;
+		row-gap: 20px;
+	}
+	.links__container::before {
+		content: none;
+	}
+	.link__item {
+		margin-right: 0px;
+	}
+	.item__3 {
+		grid-column: 1 / span 2;
+	}
+}
+
+/* 576px */
+@media (max-width: 576px) {
+	.links__container {
+		grid-template-columns: auto;
+	}
+	.item__3 {
+		grid-column: 1 / span 1;
+	}
+}
 
 /* <---------Laparoscopy--------->*/
 .lapa__container {
