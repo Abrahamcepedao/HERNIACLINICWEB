@@ -1,7 +1,7 @@
 body{
 	width: 100%;
 	max-width: 100%;
-	background: rgb(255,255,255);
+	background: var(--lightgray);
 	margin-bottom: 0px;
 	overflow-x: hidden;
 }
@@ -494,6 +494,32 @@ p, a, li, select{
 	scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }
+.services__item {
+	background: var(--white);
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	padding-bottom: 20px;
+	text-align: left;
+	min-width: 400px;
+	margin-right: 30px;
+	overflow: hidden;
+}
+.services__item div {
+	padding: 30px;
+}
+
+.service__image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--blue__secondary);
+	margin-bottom: 20px;
+}
+.service__image img {
+	width: 100px;
+	height: auto;
+	position: relative;
+}
 
 /* services buttonn */
 .services__btn {
@@ -523,7 +549,148 @@ p, a, li, select{
     width: 0;
     height: 0;
 }
-.services__item {
+
+
+
+/* <---------Open surgery vs. Laparosocopy--------->*/
+.comparison__title {
+	width: 100%;
+	margin: auto;
+	padding: 75px;
+	background: var(--lightgray);
+}
+
+.comparison__title__container {
+	width: auto;
+	max-width: 600px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.comparison__title__container h2 {
+	margin-right: 20px;
+}
+.comparison__rectangle {
+	max-width: 50px;
+	height: 8px;
+	background: var(--blue__primary);
+	flex: 1;
+	position: relative;
+	float: left;
+}
+
+
+/* <---------Frame 1--------->*/
+.frame__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--white);
+}
+.info__container {
+	width: 100%;
+	flex: 0.5;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	background: var(--white);
+	height: 40vw;
+}
+.info__inner__container {
+	max-width: 800px;
+	margin: auto;
+	padding: 50px;
+}
+.comparison__subtitle__container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	margin-bottom: 50px;
+}
+.comparison__subtitle__container h3 {
+	margin-right: 20px;
+}
+.comparison__rectangle2 {
+	width: 50px;
+	height: 8px;
+	background: var(--blue__primary);
+}
+
+/* <---------Facts - (Benefits and importance)--------->*/
+.facts__container {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 100px;
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.fact__container {
+    text-align: left;
+}
+.square__container {
+    border: 2px solid var(--blue__primary);
+    border-radius: 10px;
+    padding: 50px;
+}
+.fact__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.fact__item img {
+    width: 50px;
+    margin-right: 20px;
+}
+.fact__item h4 {
+    flex: 1;
+}
+
+.image__container {
+	flex: 0.5;
+	background-image: url('../img/surgeries/lapa.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 900px;
+}
+
+.image__overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(26, 79, 209, 0.95);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.image__overlay img {
+	width: 50%;
+}
+
+/* <---------Other Services--------->*/
+.services {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+	padding-top: 150px;
+}
+.services h2 {
+    margin-bottom: 75px;
+}
+.other__services__list {
+    margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	padding: 40px 20px 30px 20px;
+}
+.other__services__item {
 	background: var(--white);
 	border-radius: 10px;
 	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
@@ -532,15 +699,13 @@ p, a, li, select{
 	min-width: 300px;
 	margin-right: 30px;
 }
-.services__item img {
+.other__services__item img {
 	width: 80px;
 	height: auto;
 	position: relative;
 	top: -60px;
 	margin-bottom: -40px;
 }
-
-
 
 
 
