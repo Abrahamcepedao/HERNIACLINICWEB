@@ -3,7 +3,7 @@ body{
 	max-width: 100%;
 	background: var(--lightgray);
 	margin-bottom: 0px;
-	overflow-x: hidden;
+	overflow-x: hidden !important;
 }
 * {
 	margin: 0;
@@ -147,6 +147,13 @@ font-family: 'Nunito', sans-serif;
 	font-size: 25px;
 	font-weight: bold;
 	color: var(--black);
+}
+
+/* 576px */
+@media (max-width: 576px) {
+	.blue__title {
+		font-size: 25px;
+	}
 }
 
 /* <--texts--> */
@@ -526,12 +533,12 @@ p, a, li, select{
 	}
 }
 
-/* <---------Laparoscopy--------->*/
-.lapa__container {
+/* <---------Hernias--------->*/
+.hernia__container {
 	width: 100%;
 	background: var(--lightgray);
 }
-.lapa__inner__container {
+.hernia__inner__container {
 	width: 95%;
 	padding: 100px 0px;
 	max-width: 1600px;
@@ -541,8 +548,7 @@ p, a, li, select{
 	align-items: center;
 	
 }
-
-.lapa__info {
+.hernia__info {
 	display: flex;
 	justify-content: space-between;
 	align-items: start;
@@ -553,32 +559,35 @@ p, a, li, select{
 }
 
 /* lapa info top */
-.lapa__info__top {
+.hernia__info__top {
 	margin-bottom: 100px;
 }
-.lapa__info__top h2 {
+.hernia__info__top h2 {
 	margin-bottom: 20px;
 }
-.lapa__text {
+.hernia__text {
 	border-left: 4px solid var(--blue__primary);
 	padding-left: 10px;
 }
 
 /* lapa info bottom */
-.lapa__facts {
+.hernia__facts {
 	display: grid;
 	grid-template-columns: auto auto;
 	column-gap: 50px;
 	row-gap: 50px;
 	padding-top: 30px;
 }
-.lapa__fact {
+.hernia__facts::before {
+	content: none;
+}
+.hernia__fact {
 	display: flex;
 	justify-content: left;
 	align-items: center;
 }
 
-.lapa__fact img {
+.hernia__fact img {
 	width: 80px;
 	height: auto;
 	margin-right: 20px;
@@ -594,6 +603,22 @@ p, a, li, select{
     height: 500px;
     border: none;
     border-radius: 10px;
+}
+
+/* <-----responsive-----> */
+/* 992px */
+@media (max-width: 992px) {
+	.hernia__inner__container {
+		display: block;
+	}
+	
+}
+
+/* 576px */
+@media (max-width: 576px) {
+	.hernia__facts {
+		grid-template-columns: auto;
+	}
 }
 
 
