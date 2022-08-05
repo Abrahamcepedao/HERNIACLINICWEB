@@ -8,7 +8,7 @@ body{
 * {
 	margin: 0;
 	padding: 0;
-	outline: none;
+	outline: none !important;
 }
 
 html {
@@ -40,6 +40,7 @@ font-family: 'Nunito', sans-serif;
 	text-align: center;
 	text-decoration: none;
 	font-size: 18px;
+	font-weight: bold;
 	border-radius: 10px;
 	cursor: pointer;
 	transition: all 0.3s ease-in-out;
@@ -125,7 +126,7 @@ font-family: 'Nunito', sans-serif;
 
 /* <--title--> */
 .title {
-	font-size: 40px;
+	font-size: 45px;
 	color: var(--white);
 	font-weight: bold;
 	margin-bottom: 10px;
@@ -162,6 +163,7 @@ font-family: 'Nunito', sans-serif;
 	font-size: 18px;
 	color: var(--blue__secondary);
 	margin-bottom: 10px;
+	font-weight: bolder;
 }
 
 /* <--------Fonts--------->*/
@@ -213,16 +215,17 @@ p, a, li, select{
 .nav__item {
 	margin-right: 20px;
 }
-.nav__item a {
+.nav__link {
 	color: var(--black);
-	font-size: 18px;
-	font-weight: bold;
+	font-size: 22px;
+	font-weight: bolder;
 }
-.nav__item a:hover {
+.nav__link:hover {
 	color: var(--blue__primary);
-	font-weight: bold;
 }
-
+.nav__link:active {
+	color: var(--blue__primary);
+}
 /* nav links */
 .nav__links {
 	display: flex;
@@ -234,7 +237,7 @@ p, a, li, select{
 	height: 20px;
 }
 .nav__lang__container p {
-	font-size: 18px;
+	font-size: 20px;
 	color: var(--black);
 	font-weight: bolder;
 	text-decoration: underline;
@@ -253,6 +256,39 @@ p, a, li, select{
 .social__icon:hover {
 	transform: scale(1.1);
 }
+
+/* dropdown */
+.dropbtn {
+	background: none;
+	border: none;
+}
+.dropdown {
+	background: red;
+	padding: 10px 0px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover + .dropdown-content {
+  display: block;
+}
+.show {display: block;}
 
 /* <---------Landing--------->*/
 .landing__container {
@@ -719,6 +755,12 @@ p, a, li, select{
 	width: 100%;
 	padding: 50px;
 	text-align: center;
+}
+.reviews__container h2 {
+	margin-bottom: 50px;
+}
+.reviews__iframe {
+	background: var(--lightgray);
 }
 
 
