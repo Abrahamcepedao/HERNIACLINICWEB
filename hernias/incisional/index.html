@@ -20,7 +20,7 @@
 
 
     <!--Basic configuration-->
-    <link rel="icon" type="image/png" href="../img/logo.png">
+    <link rel="icon" type="image/png" href="../../img/logo.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -31,13 +31,25 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <!--AOS CSS-->
-    <link rel="stylesheet" href="../css/aos copia 2.css" />
+    <link rel="stylesheet" href="../../css/aos copia 2.css" />
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <!-- Material Design Bootstrap -->
-    <link rel="stylesheet" href="../css/mdb.min.css">
+    <link rel="stylesheet" href="../../css/mdb.min.css">
+    
+    
+    <!-- Footer css -->
+    <link rel="stylesheet" href="../../css/footer.css">
+    <!-- Header css -->
+    <link rel="stylesheet" href="../../css/header.css">
+    <!-- Global css -->
+    <link rel="stylesheet" href="../../css/global.css">
     <!-- Index css-->
-    <link rel="stylesheet" href="../css/services.css">
+    <link rel="stylesheet" href="../../css/services.css">
+
+    <!-- menu styles -->
+    <link rel="stylesheet" href="../../menu/css/reset.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="../../menu/css/style.css"> <!-- Resource style -->
 
     <!--------------Google Fonts-------------->
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bowlby+One+SC|Lilita+One&display=swap"
@@ -60,26 +72,28 @@
     <nav class="nav__container">
         <div class="logo__container">
             <a href="../index.html">
-                <img src="../img/logo.png" alt="Logo" class="logo">
+                <img src="../../img/herniaLogo.png" alt="Logo" class="logo">
             </a>
         </div>
         <div class="nav__inner__container">
             <div class="nav__item">
-                <a href="#header" class="nav__link">Inicio</a>
+                <a href="../../" class="nav__link">Inicio</a>
             </div>
             <div class="nav__item">
-                <a href="../index.html" class="nav__link">About Us</a>
+                <a href="https://ceciminv.com.mx/about" class="nav__link">About Us</a>
             </div>
             <div class="nav__item">
-                <a href="../index.html" class="nav__link">Services</a>
+                <a href="../../#services" class="nav__link">Services</a>
             </div>
             <div class="nav__item">
-                <a href="../index.html" class="nav__link">Faq's</a>
+                <a href="https://ceciminv.com.mx/faqs"" class=" nav__link">FAQ's</a>
             </div>
 
             <div class="nav__links">
                 <div class="nav__lang__container">
-                    <p>es</p>
+                    <a href="./es/">
+                        <p>es</p>
+                    </a>
                 </div>
                 <div class="social__container">
                     <a href="https://www.instagram.com/drrodolfoaparicio/?hl=es-la" target="_blank"><i
@@ -94,16 +108,59 @@
                 </div>
             </div>
         </div>
+
+        <!-- hamburguer menu -->
+        <a href="#0" class="cd-nav-trigger mobile__ham">Menu<span class="cd-icon"></span></a>
     </nav>
 </header>
+
+<!-- Mobile nav -->
+<nav class="mobile__nav">
+    <ul class="cd-primary-nav">
+        <li><a class="mobile-link" href="../../">Home</a></li>
+        <li><a class="mobile-link" href="https://ceciminv.com.mx/about">About Us</a></li>
+        <li><a class="mobile-link" href="../../#services">Services</a></li>
+        <li><a class="mobile-link" href="https://ceciminv.com.mx/faqs">FAQ's</a></li>
+        <li><a class="mobile-link" href="#appointment">Contact Us</a></li>
+        <li>
+            <div class="nav__links" style="justify-content: center;">
+                <div class="nav__lang__container">
+                    <a href="./es/">
+                        <p style="color: white;">es</p>
+                    </a>
+                </div>
+                <div class="social__container">
+                    <a href="https://www.instagram.com/drrodolfoaparicio/?hl=es-la" target="_blank"><i
+                            class="fab fa-instagram fa-2x social__icon" style="color: white !important;"></i></a>
+                    <a href="https://www.facebook.com/DrRodolfoAparicio/" target="_blank"><i
+                            class="fab fa-facebook-square fa-2x social__icon" style="color: white !important;"></i></a>
+                </div>
+                <div>
+                    <a href="#appointment">
+                        <button class="white__button">Contact Us</button>
+                    </a>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+</nav>
+
+<div class="cd-overlay-nav">
+    <span></span>
+</div> <!-- cd-overlay-nav -->
+
+<div class="cd-overlay-content">
+    <span></span>
+</div> <!-- cd-overlay-content -->
 
 <body>
     <!-- landing -->
     <div class="landing__container">
         <div class="landing__overlay">
             <div class="landing__info">
-                <img src="../img/surgeries/stomach.png"/>
-                <h2 class="title">Gallblader Surgery</h2>
+                <img src="../../img/surgeries/stomach.png" />
+                <h2 class="title">Inguinal Hernia</h2>
                 <div></div>
             </div>
         </div>
@@ -113,18 +170,22 @@
     <div class="about">
         <div class="about__info">
             <h4 class="subtitle">About</h4>
-            <h2 class="black__title">Gallbladder Surgery</h2>
-            <p class="text__normal">Gallbladder surgery is performed by a general surgeon in a hospital under general anesthesia. In select cases (e.g., an
-            intolerance to general anesthesia), the operation may be performed under spinal anesthesia.1﻿﻿﻿
-            
-            While the surgery can be scheduled in advance, in cases of severe inflammation, gallbladder surgery is performed
-            emergently.
-            
-            Gallbladder surgery is performed by a general surgeon in a hospital under general anesthesia. In select cases (e.g., an
-            intolerance to general anesthesia), the operation may be performed under spinal anesthesia.1﻿﻿﻿
-            
-            While the surgery can be scheduled in advance, in cases of severe inflammation, gallbladder surgery is performed
-            emergently.</p>
+            <h2 class="black__title">Inguinal Hernia</h2>
+            <p class="text__normal">Gallbladder surgery is performed by a general surgeon in a hospital under general
+                anesthesia. In select cases (e.g., an
+                intolerance to general anesthesia), the operation may be performed under spinal anesthesia.1﻿﻿﻿
+
+                While the surgery can be scheduled in advance, in cases of severe inflammation, gallbladder surgery is
+                performed
+                emergently.
+
+                Gallbladder surgery is performed by a general surgeon in a hospital under general anesthesia. In select
+                cases (e.g., an
+                intolerance to general anesthesia), the operation may be performed under spinal anesthesia.1﻿﻿﻿
+
+                While the surgery can be scheduled in advance, in cases of severe inflammation, gallbladder surgery is
+                performed
+                emergently.</p>
         </div>
         <div class="video__container">
             <iframe class="video__iframe" src="https://www.youtube.com/embed/WC_hNn_Z9W0">
@@ -143,24 +204,24 @@
 
             <div class="square__container">
                 <div class="fact__item">
-                    <img src="../img/surgeries/check.png" alt="check"/>
-                    <h4 class="black__subtitle">Gallbladder surgery is performed by a general surgeon.</h4>
+                    <img src="../../img/surgeries/check.png" alt="check" />
+                    <h4 class="black__text">Gallbladder surgery is performed by a general surgeon.</h4>
                 </div>
                 <div class="fact__item">
-                    <img src="../img/surgeries/check.png" alt="check" />
-                    <h4 class="black__subtitle">Gallbladder surgery is performed by a general surgeon.</h4>
+                    <img src="../../img/surgeries/check.png" alt="check" />
+                    <h4 class="black__text">Gallbladder surgery is performed by a general surgeon.</h4>
                 </div>
                 <div class="fact__item">
-                    <img src="../img/surgeries/check.png" alt="check" />
-                    <h4 class="black__subtitle">Gallbladder surgery is performed by a general surgeon.</h4>
+                    <img src="../../img/surgeries/check.png" alt="check" />
+                    <h4 class="black__text">Gallbladder surgery is performed by a general surgeon.</h4>
                 </div>
                 <div class="fact__item">
-                    <img src="../img/surgeries/check.png" alt="check" />
-                    <h4 class="black__subtitle">Gallbladder surgery is performed by a general surgeon.</h4>
+                    <img src="../../img/surgeries/check.png" alt="check" />
+                    <h4 class="black__text">Gallbladder surgery is performed by a general surgeon.</h4>
                 </div>
                 <div class="fact__item">
-                    <img src="../img/surgeries/check.png" alt="check" />
-                    <h4 class="black__subtitle">Gallbladder surgery is performed by a general surgeon.</h4>
+                    <img src="../../img/surgeries/check.png" alt="check" />
+                    <h4 class="black__text">Gallbladder surgery is performed by a general surgeon.</h4>
                 </div>
             </div>
         </div>
@@ -170,27 +231,27 @@
                 <h3 class="blue__title">Benefits of Gallbladder Surgery</h3>
                 <div class="rectangle"></div>
             </div>
-        
+
             <div class="square__container">
                 <div class="fact__item">
-                    <img src="../img/surgeries/check.png" alt="check" />
-                    <h4 class="black__subtitle">Gallbladder surgery is performed by a general surgeon.</h4>
+                    <img src="../../img/surgeries/check.png" alt="check" />
+                    <h4 class="black__text">Gallbladder surgery is performed by a general surgeon.</h4>
                 </div>
                 <div class="fact__item">
-                    <img src="../img/surgeries/check.png" alt="check" />
-                    <h4 class="black__subtitle">Gallbladder surgery is performed by a general surgeon.</h4>
+                    <img src="../../img/surgeries/check.png" alt="check" />
+                    <h4 class="black__text">Gallbladder surgery is performed by a general surgeon.</h4>
                 </div>
                 <div class="fact__item">
-                    <img src="../img/surgeries/check.png" alt="check" />
-                    <h4 class="black__subtitle">Gallbladder surgery is performed by a general surgeon.</h4>
+                    <img src="../../img/surgeries/check.png" alt="check" />
+                    <h4 class="black__text">Gallbladder surgery is performed by a general surgeon.</h4>
                 </div>
                 <div class="fact__item">
-                    <img src="../img/surgeries/check.png" alt="check" />
-                    <h4 class="black__subtitle">Gallbladder surgery is performed by a general surgeon.</h4>
+                    <img src="../../img/surgeries/check.png" alt="check" />
+                    <h4 class="black__text">Gallbladder surgery is performed by a general surgeon.</h4>
                 </div>
                 <div class="fact__item">
-                    <img src="../img/surgeries/check.png" alt="check" />
-                    <h4 class="black__subtitle">Gallbladder surgery is performed by a general surgeon.</h4>
+                    <img src="../../img/surgeries/check.png" alt="check" />
+                    <h4 class="black__text">Gallbladder surgery is performed by a general surgeon.</h4>
                 </div>
             </div>
         </div>
@@ -201,25 +262,31 @@
         <h2 class="blue__title">Other Services</h2>
         <div class="services__list">
             <div class="services__item" id="service">
-                <img src="../img/landing/clock.png" />
-                <h3 class="title__black__small">Gastsro Surgery</h3>
-                <p class="text__normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non mauris nulla tincidunt
-                    fermentum. Sagittis pellentesque.</p>
-                <button class="blue__button">LEARN MORE</button>
+                <img src="../../../img/landing/clock.png" />
+                <h3 class="title__black__small">Hernia Hiatal</h3>
+                <p class="text__normal">It occurs in the upper part of the stomach, and the upper part of the stomach
+                    seems a little bulky.</p>
+                <a href="../../hiatal/">
+                    <button class="blue__button">SABER MÁS</button>
+                </a>
             </div>
             <div class="services__item" id="service">
-                <img src="../img/landing/clock.png" />
-                <h3 class="title__black__small">Gastsro Surgery</h3>
-                <p class="text__normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non mauris nulla tincidunt
-                    fermentum. Sagittis pellentesque.</p>
-                <button class="blue__button">LEARN MORE</button>
+                <img src="../../../img/landing/clock.png" />
+                <h3 class="title__black__small">Hernia Incisional</h3>
+                <p class="text__normal">It happens when the intestine comes out through the abdominal wall at the site
+                    of surgery.</p>
+                cirugía.</p>
+                <a href="../../incisional/">
+                    <button class="blue__button">SABER MÁS</button>
+                </a>
             </div>
-            <div class="services__item" id="service">
-                <img src="../img/landing/clock.png" />
-                <h3 class="title__black__small">Gastsro Surgery</h3>
-                <p class="text__normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non mauris nulla tincidunt
-                    fermentum. Sagittis pellentesque.</p>
-                <button class="blue__button">LEARN MORE</button>
+            <div class="services__item services__item3" id="service">
+                <img src="../../../img/landing/clock.png" />
+                <h3 class="title__black__small">Hernia Ventral</h3>
+                <p class="text__normal">A lump appears in the abdominal wall due to a weakening in it.</p>
+                <a href="../../ventral/">
+                    <button class="blue__button">SABER MÁS</button>
+                </a>
             </div>
         </div>
     </div>
@@ -252,7 +319,8 @@
 
             <!-- image separator -->
             <div class="appointment__image">
-                <img src="../img/landing/dots.png" />
+                <img class="appointment__image1" src="../../img/landing/dots.png" />
+                <img class="appointment__image2" src="../../img/landing/dots_h.png" />
             </div>
 
             <!-- form -->
@@ -262,7 +330,7 @@
                         <div class="input_outer__container">
                             <p class="form__label">NAME</p>
                             <div class="input__container">
-                                <img src="../img/landing/user.svg" />
+                                <img src="../../img/landing/user.svg" />
                                 <input placeholder="Name" type="text" id="name" class="input" />
                             </div>
                         </div>
@@ -270,7 +338,7 @@
                         <div class="input_outer__container">
                             <p class="form__label">EMAIL</p>
                             <div class="input__container">
-                                <img src="../img/landing/email.svg" />
+                                <img src="../../img/landing/email.svg" />
                                 <input placeholder="Email" type="email" id="email" class="input" />
                             </div>
                         </div>
@@ -278,7 +346,7 @@
                         <div class="input_outer__container">
                             <p class="form__label">PHONE</p>
                             <div class="input__container">
-                                <img src="../img/landing/phone.svg" />
+                                <img src="../../img/landing/phone.svg" />
                                 <input placeholder="Phone" type="text" id="name" class="input" />
                             </div>
                         </div>
@@ -286,8 +354,15 @@
                         <div class="input_outer__container">
                             <p class="form__label">TYPE OF SURGERY</p>
                             <div class="input__container">
-                                <img src="../img/landing/subject.svg" />
-                                <input placeholder="Type of surgery" type="email" id="email" class="input" />
+                                <img src="../../img/landing/subject.svg" />
+                                <select name="hernias" class="input" id="hernias">
+                                    <option value="" default>Select type of hernia</option>
+                                    <option value="Hiatal">Hiatal</option>
+                                    <option value="Incisional">Incisional</option>
+                                    <option value="Umbilical">Umbilical</option>
+                                    <option value="Ventral">Ventral</option>
+                                    <option value="Inguinal">Inguinal</option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -295,7 +370,7 @@
                     <div class="textarea_outer__container">
                         <p class="form__label">HOW CAN WE HELP YOU?</p>
                         <div class="textarea__container">
-                            <img src="../img/landing/pencil.svg" />
+                            <img src="../../img/landing/pencil.svg" />
                             <textarea placeholder="Type your message" rows="4" id="message" class="input"></textarea>
                         </div>
                     </div>
@@ -310,82 +385,76 @@
     <div class="footer">
         <div class="footer__container">
             <div class="footer__logo">
-                <img src="../img/logo.png" />
+                <img src="../../img/herniaLogo.png" />
                 <h4 class="phrase">“Medicine can cure diseases but only doctors can cure patients”</h4>
             </div>
-
+    
             <div class="list__container">
                 <h5 class="black__subtitle">Links</h5>
                 <ul class="footer__list">
                     <li>
-                        <a href="#" class="footer__link">Home</a>
+                        <a href="../../" class="footer__link">Home</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">About Us</a>
+                        <a href="https://ceciminv.com.mx/about" class="footer__link">About Us</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Services</a>
+                        <a href="../../#services" class="footer__link">Hernias</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Hernia Clinic</a>
+                        <a href="https://ceciminv.com.mx/obesity" class="footer__link">Obesity</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Obesity</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Faq's</a>
+                        <a href="https://ceciminv.com.mx/faqs" class="footer__link">FAQ's</a>
                     </li>
                 </ul>
             </div>
-
+    
             <div class="list__container">
-                <h5 class="black__subtitle">Surgeries</h5>
+                <h5 class="black__subtitle">Hernias</h5>
                 <ul class="footer__list">
                     <li>
-                        <a href="#" class="footer__link">Gallblader</a>
+                        <a href="../hiatal/" class="footer__link">Hiatal</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Reflux</a>
+                        <a href="#header" class="footer__link">Incisional</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Hernia</a>
+                        <a href="../inguinal/" class="footer__link">Inguinal</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Appendix</a>
+                        <a href="../umbilical/" class="footer__link">Umbilical</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Bariatric</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Colon</a>
+                        <a href="../ventral/" class="footer__link">Ventral</a>
                     </li>
                 </ul>
             </div>
-
-            <div class="list__container">
+    
+            <div class="list__container list__container3">
                 <h5 class="black__subtitle">Contact Us</h5>
                 <div class="contact__item">
-                    <img src="../img/landing/phone.svg" />
+                    <img src="../../img/landing/phone.svg" />
                     <p>999 196 0827</p>
                 </div>
                 <div class="contact__item">
-                    <img src="../img/landing/email.svg" />
-                    <p>drrodolfoaparicioponce@gmail.com</p>
+                    <img src="../../img/landing/email.svg" />
+                    <p>drrodolfoaparicioponce<br />@gmail.com</p>
                 </div>
                 <div class="contact__item">
-                    <img src="../img/landing/loc.svg" />
+                    <img src="../../img/landing/loc.svg" />
                     <p>Torre milenium tercer piso #303 Mérida Yucatán México</p>
                 </div>
             </div>
         </div>
-
+    
         <!-- copyright -->
         <div class="copyright__container">
             <!-- copyright -->
             <div class="copyright">
                 <p>Copyright © 2022 - Dr. Rodolfo Aparicio Ponce</p>
             </div>
-
+    
             <!-- social links -->
             <div class="social__container">
                 <a href="https://www.instagram.com/drrodolfoaparicio/?hl=es-la" target="_blank"><i
@@ -396,30 +465,22 @@
         </div>
     </div>
 
-    <div class="goback"><a href="#header"><i class="fas fa-angle-up fa-3x"></i></a></div>
+    <!-- Fixed links -->
+    <div class="fixed__links">
+        <div class="whatsapp"><a href="https://wa.me/529991869741" target="_blank">
+                <i class="fab fa-whatsapp fa-3x"></i>
+            </a></div>
+        <div class="goback"><a href="#header"><i class="fas fa-angle-up fa-3x"></i></a></div>
 
-
-    <div class="whatsapp"><a href="https://wa.me/529991869741" target="_blank">
-            <img class="whatsapp_image" src="../img/whatsapp.png" alt="whatsapp">
-        </a></div>
+    </div>
 </body>
 <!---------------Javascript----------------->
+<!-- Menu -->
+<script src="../../menu/js/jquery-2.1.1.js"></script>
+<script src="../../menu/js/velocity.min.js"></script>
+<script src="../../menu/js/main.js"></script> <!-- Resource jQuery -->
 
 
-<!--Var menu controler-->
-<script type="text/javascript">
-    function displayMenu() {
-        var display;
-        var card_menu = document.getElementById("card_menu");
-        display = card_menu.style.display;
-        if (display == "none") {
-            card_menu.style.display = "block";
-        }
-        else {
-            card_menu.style.sdisplay = "none";
-        }
-    }
-</script>
 <!--AOS animations controller-->
 <script src="js/aos copia 2.js"></script>
 <script type="text/javascript">
@@ -431,23 +492,5 @@
     });
 </script>
 
-
-<!-- Carousel controller -->
-<script type="text/javascript">
-    const slidesContainer = document.getElementById("services-container");
-    const slide = document.querySelector(".services__item");
-    const prevButton = document.getElementById("button-prev");
-    const nextButton = document.getElementById("button-next");
-
-    nextButton.addEventListener("click", () => {
-        const slideWidth = slide.clientWidth;
-        slidesContainer.scrollLeft += slideWidth;
-    });
-
-    prevButton.addEventListener("click", () => {
-        const slideWidth = slide.clientWidth;
-        slidesContainer.scrollLeft -= slideWidth;
-    });
-</script>
 
 </html>

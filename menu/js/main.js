@@ -4,6 +4,7 @@ jQuery(document).ready(function($){
 		navigation = $('.cd-primary-nav'),
 		toggleNav = $('.cd-nav-trigger');
 		mobileLink = $('.mobile-link');
+		contact__button = $('.white__button');
 
 	//inizialize navigation and content layers
 	layerInit();
@@ -60,6 +61,40 @@ jQuery(document).ready(function($){
 	});
 
 	mobileLink.on('click', function(){
+		//navigation is open - close it and remove navigation layer
+		toggleNav.removeClass('close-nav');
+		
+		overlayContent.children('span').velocity({
+			translateZ: 0,
+			scaleX: 1,
+			scaleY: 1,
+		}, 500, 'easeInCubic', function(){
+			navigation.removeClass('fade-in');
+			
+			overlayNav.children('span').velocity({
+				translateZ: 0,
+				scaleX: 0,
+				scaleY: 0,
+			}, 0);
+			
+			overlayContent.addClass('is-hidden').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+				overlayContent.children('span').velocity({
+					translateZ: 0,
+					scaleX: 0,
+					scaleY: 0,
+				}, 0, function(){overlayContent.removeClass('is-hidden')});
+			});
+			if($('html').hasClass('no-csstransitions')) {
+				overlayContent.children('span').velocity({
+					translateZ: 0,
+					scaleX: 0,
+					scaleY: 0,
+				}, 0, function(){overlayContent.removeClass('is-hidden')});
+			}
+		});
+	});
+
+	contact__button.on('click', function(){
 		//navigation is open - close it and remove navigation layer
 		toggleNav.removeClass('close-nav');
 		

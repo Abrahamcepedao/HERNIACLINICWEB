@@ -20,7 +20,7 @@
 
 
     <!--Basic configuration-->
-    <link rel="icon" type="image/png" href="./img/logo.png">
+    <link rel="icon" type="image/png" href="../img/logo.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -31,15 +31,25 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <!--AOS CSS-->
-    <link rel="stylesheet" href="css/aos copia 2.css" />
+    <link rel="stylesheet" href="../css/aos copia 2.css" />
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- Material Design Bootstrap -->
-    <link rel="stylesheet" href="css/mdb.min.css">
-    <!-- Your custom styles (optional) -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/mdb.min.css">
+    
+
     <!-- Index css-->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- Footer css -->
+    <link rel="stylesheet" href="../css/footer.css">
+    <!-- Header css -->
+    <link rel="stylesheet" href="../css/header.css">
+    <!-- Global css -->
+    <link rel="stylesheet" href="../css/global.css">
+
+    <!-- menu styles -->
+    <link rel="stylesheet" href="../menu/css/reset.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="../menu/css/style.css"> <!-- Resource style -->
 
     <!--------------Google Fonts-------------->
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bowlby+One+SC|Lilita+One&display=swap"
@@ -50,13 +60,13 @@
     <script src="../js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <!--<script src="https://kit.fontawesome.com/e284a863c3.js"></script>-->
     <!-- jQuery -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="../js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
 </head>
 <header id="header">
     <nav class="nav__container">
@@ -73,23 +83,16 @@
                 <a href="https://ceciminv.com.mx/about" class="nav__link">Acerca de</a>
             </div>
             <div class="nav__item">
-                <button onclick="dropdown()" class="dropbtn nav__link">Servicios<i
-                        style="margin-left: 5px; position:relative; top: 1.5px;"
-                        class="fas fa-angle-right"></i></button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
+                <a href="#services" class="nav__link">Servicios</a>
             </div>
             <div class="nav__item">
-                <a href="#" class="nav__link">Faq's</a>
+                <a href="https://ceciminv.com.mx/faqs" class="nav__link">Faq's</a>
             </div>
 
             <div class="nav__links">
                 <div class="nav__lang__container">
-                    <a href="index.html">
-                        <p>es</p>
+                    <a href="../">
+                        <p>en</p>
                     </a>
                 </div>
                 <div class="social__container">
@@ -105,8 +108,51 @@
                 </div>
             </div>
         </div>
+
+        <!-- hamburguer menu -->
+        <a href="#0" class="cd-nav-trigger mobile__ham">Menu<span class="cd-icon"></span></a>
     </nav>
 </header>
+
+<!-- Mobile nav -->
+<nav class="mobile__nav">
+    <ul class="cd-primary-nav">
+        <li><a class="mobile-link" href="#header">Inicio</a></li>
+        <li><a class="mobile-link" href="https://ceciminv.com.mx/about">Acerca de</a></li>
+        <li><a class="mobile-link" href="#services">Servicios</a></li>
+        <li><a class="mobile-link" href="https://ceciminv.com.mx/faqs">FAQ's</a></li>
+        <li><a class="mobile-link" href="#appointment">Contacto</a></li>
+        <li>
+            <div class="nav__links" style="justify-content: center;">
+                <div class="nav__lang__container">
+                    <a href="./">
+                        <p style="color: white;">en</p>
+                    </a>
+                </div>
+                <div class="social__container">
+                    <a href="https://www.instagram.com/drrodolfoaparicio/?hl=es-la" target="_blank"><i
+                            class="fab fa-instagram fa-2x social__icon" style="color: white !important;"></i></a>
+                    <a href="https://www.facebook.com/DrRodolfoAparicio/" target="_blank"><i
+                            class="fab fa-facebook-square fa-2x social__icon" style="color: white !important;"></i></a>
+                </div>
+                <div>
+                    <a href="#appointment">
+                        <button class="white__button">Contacto</button>
+                    </a>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+</nav>
+
+<div class="cd-overlay-nav">
+    <span></span>
+</div> <!-- cd-overlay-nav -->
+
+<div class="cd-overlay-content">
+    <span></span>
+</div> <!-- cd-overlay-content -->
 
 <body>
     <!-- landing -->
@@ -129,11 +175,11 @@
             </div>
             <div class="landing__image__container">
                 <div class="image__circle">
-                    <img src="./img/landing/doc.png" />
+                    <img src="../img/landing/doc.png" />
 
                 </div>
                 <div class="image__doc">
-                    <img src="./img/landing/rodolfo2.png" />
+                    <img src="../img/landing/rodolfo2.png" />
                 </div>
             </div>
         </div>
@@ -141,28 +187,8 @@
 
     <!-- Contact info -->
     <div class="links__container">
-        <div class="link__item">
-            <img src="./img/landing/contact.png" />
-            <div>
-                <h5 class="black__subtitle">Centro de Cirugía Laparascópica</h5>
-                <a href="https://ceciminv.com.mx/" class="link__inner__container">
-                    <p>SABER MÁS</p>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-        <div class="link__item">
-            <img src="./img/landing/loc.png" />
-            <div>
-                <h5 class="black__subtitle">Cirugía de Obesidad</h5>
-                <a href="https://ceciminv.com.mx/obesity" class="link__inner__container">
-                    <p>SABER MÁS</p>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
         <div class="link__item" style="border-right: none !important;">
-            <img src="./img/landing/clock.png" />
+            <img src="../img/landing/clock.png" />
             <div>
                 <h5 class="black__subtitle">Tipos de Hernias</h5>
                 <a href="https://ceciminv.com.mx/about" class="link__inner__container">
@@ -171,16 +197,36 @@
                 </a>
             </div>
         </div>
+        <div class="link__item">
+            <img src="../img/landing/loc.png" />
+            <div>
+                <h5 class="black__subtitle">Cirugía de Obesidad</h5>
+                <a href="https://ceciminv.com.mx/obesity" class="link__inner__container">
+                    <p>SABER MÁS</p>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="link__item link__item3">
+            <img src="../img/landing/contact.png" />
+            <div>
+                <h5 class="black__subtitle">Centro de Cirugía Laparascópica</h5>
+                <a href="https://ceciminv.com.mx/" class="link__inner__container">
+                    <p>SABER MÁS</p>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
     </div>
 
     <!-- laparoscopy -->
-    <div class="lapa__container">
+    <div class="hernia__container">
 
-        <div class="lapa__inner__container">
-            <div class="lapa__info">
-                <div class="lapa__info__top">
+        <div class="hernia__inner__container">
+            <div class="hernia__info">
+                <div class="hernia__info__top">
                     <h2 class="blue__title">¿Qué es una hernia?</h2>
-                    <p class="text__normal lapa__text">A hernia happens when an internal organ pushes through a weak
+                    <p class="text__normal hernia__text">A hernia happens when an internal organ pushes through a weak
                         spot in your muscle or tissue. There are several types of
                         hernia that you can experience including, inguinal hernias, femoral hernias, umbilical hernias
                         and hiatal hernias. If
@@ -188,21 +234,21 @@
                 </div>
                 <div>
                     <h2 class="blue__title">Importancia de tratar las hernias</h2>
-                    <div class="lapa__facts">
-                        <div class="lapa__fact">
-                            <img src="./img/landing/clock.png" />
+                    <div class="hernia__facts">
+                        <div class="hernia__fact">
+                            <img src="../img/landing/clock.png" />
                             <p class="gray__subtitle">Minimally invasive surgery</p>
                         </div>
-                        <div class="lapa__fact">
-                            <img src="./img/landing/clock.png" />
+                        <div class="hernia__fact">
+                            <img src="../img/landing/clock.png" />
                             <p class="gray__subtitle">Minimally invasive surgery</p>
                         </div>
-                        <div class="lapa__fact">
-                            <img src="./img/landing/clock.png" />
+                        <div class="hernia__fact">
+                            <img src="../img/landing/clock.png" />
                             <p class="gray__subtitle">Minimally invasive surgery</p>
                         </div>
-                        <div class="lapa__fact">
-                            <img src="./img/landing/clock.png" />
+                        <div class="hernia__fact">
+                            <img src="../img/landing/clock.png" />
                             <p class="gray__subtitle">Minimally invasive surgery</p>
                         </div>
                     </div>
@@ -218,7 +264,7 @@
 
 
     <!-- Services -->
-    <div class="services__container">
+    <div class="services__container" id="services">
         <!-- header -->
         <div class="services__header">
             <div>
@@ -241,52 +287,62 @@
             <div class="services__list" id="services-container">
                 <div class="services__item" id="service">
                     <div class="service__image">
-                        <img src="./img/landing/clock.png" />
+                        <img src="../img/landing/clock.png" />
                     </div>
                     <div>
                         <h3 class="title__black__small">Hernia Ventral</h3>
                         <p class="text__normal">Se manifiesta un bulto en la pared abdominal a causa de un debilitamiento en la misma.</p>
-                        <button class="blue__button">SABER MÁS</button>
+                        <a href="../hernias/ventral/es/">
+                            <button class="blue__button">SABER MÁS</button>
+                        </a>
                     </div>
                 </div>
                 <div class="services__item" id="service">
                     <div class="service__image">
-                        <img src="./img/landing/clock.png" />
+                        <img src="../img/landing/clock.png" />
                     </div>
                     <div>
                         <h3 class="title__black__small">Hernia Inguinal</h3>
                         <p class="text__normal">Se produce en la ingle cuando el tejido, intestino o vejiga se empuja a través de un punto débil.</p>
-                        <button class="blue__button">SABER MÁS</button>
+                        <a href="../hernias/inguinal/es">
+                            <button class="blue__button">SABER MÁS</button>
+                        </a>
                     </div>
                 </div>
                 <div class="services__item" id="service">
                     <div class="service__image">
-                        <img src="./img/landing/clock.png" />
+                        <img src="../img/landing/clock.png" />
                     </div>
                     <div>
                         <h3 class="title__black__small">Hernia Incisional</h3>
                         <p class="text__normal">Sucede cuando el intestino sale a través de la pared abdominal en el lugar de una cirugía.</p>
-                        <button class="blue__button">SABER MÁS</button>
+                        <a href="../hernias/incisional/es">
+                            <button class="blue__button">SABER MÁS</button>
+                        </a>
                     </div>
                 </div>
                 <div class="services__item" id="service">
                     <div class="service__image">
-                        <img src="./img/landing/clock.png" />
+                        <img src="../img/landing/clock.png" />
                     </div>
                     <div>
                         <h3 class="title__black__small">Hernia Hiatal</h3>
                         <p class="text__normal">Se produce en la parte superior del estómago, y la parte superior del mismo parece un poco abultada.</p>
-                        <button class="blue__button">SABER MÁS</button>
+                        <a href="../hernias/hiatal/es">
+                            <button class="blue__button">SABER MÁS</button>
+                        </a>
                     </div>
                 </div>
                 <div class="services__item" id="service">
                     <div class="service__image">
-                        <img src="./img/landing/clock.png" />
+                        <img src="../img/landing/clock.png" />
                     </div>
                     <div>
                         <h3 class="title__black__small">Hernia Umbilical</h3>
                         <p class="text__normal">Se da cuando el intestino, la grasa o el líquido sale a través del abdómen, ocasionando un bulto en el ombligo.</p>
-                        <button class="blue__button">SABER MÁS</button>
+                        <a href="../hernias/umbilical/es">
+                            <button class="blue__button">SABER MÁS</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -312,7 +368,7 @@
         <!-- frame 1 -->
         <div class="image__container">
             <div class="image__overlay">
-                <img src="./img/surgeries/stomach.png" />
+                <img src="../img/surgeries/stomach.png" />
             </div>
         </div>
         <div class="info__container">
@@ -326,24 +382,24 @@
                     <div class="square__container">
                         <div class="fact__item">
                             <img src="../img/surgeries/check.png" alt="check" />
-                            <h4 class="black__subtitle">La pared abdominal se cierra con sutura o una malla protésica, la cuál es un material sintético que refuerza el tejido o
+                            <h4 class="black__text">La pared abdominal se cierra con sutura o una malla protésica, la cuál es un material sintético que refuerza el tejido o
                             zanja el defecto.</h4>
                         </div>
                         <div class="fact__item">
                             <img src="../img/surgeries/check.png" alt="check" />
-                            <h4 class="black__subtitle">Mayor tiempo de recuperación.</h4>
+                            <h4 class="black__text">Mayor tiempo de recuperación.</h4>
                         </div>
                         <div class="fact__item">
                             <img src="../img/surgeries/check.png" alt="check" />
-                            <h4 class="black__subtitle">Menor duración de cirugía.</h4>
+                            <h4 class="black__text">Menor duración de cirugía.</h4>
                         </div>
                         <div class="fact__item">
                             <img src="../img/surgeries/check.png" alt="check" />
-                            <h4 class="black__subtitle">Mayor dolor postoperatorio.</h4>
+                            <h4 class="black__text">Mayor dolor postoperatorio.</h4>
                         </div>
                         <div class="fact__item">
                             <img src="../img/surgeries/check.png" alt="check" />
-                            <h4 class="black__subtitle">Menor costo.</h4>
+                            <h4 class="black__text">Menor costo.</h4>
                         </div>
                     </div>
                 </div>
@@ -365,23 +421,23 @@
                     <div class="square__container">
                         <div class="fact__item">
                             <img src="../img/surgeries/check.png" alt="check" />
-                            <h4 class="black__subtitle">Repara el defecto de la pared abdominal también con una malla pero mediante incisiones pequeñas y un laparoscopio.</h4>
+                            <h4 class="black__text">Repara el defecto de la pared abdominal también con una malla pero mediante incisiones pequeñas y un laparoscopio.</h4>
                         </div>
                         <div class="fact__item">
                             <img src="../img/surgeries/check.png" alt="check" />
-                            <h4 class="black__subtitle">Requiere de incisiones más pequeñas.</h4>
+                            <h4 class="black__text">Requiere de incisiones más pequeñas.</h4>
                         </div>
                         <div class="fact__item">
                             <img src="../img/surgeries/check.png" alt="check" />
-                            <h4 class="black__subtitle">Mucho menor el riesgo de infección de herida.</h4>
+                            <h4 class="black__text">Mucho menor el riesgo de infección de herida.</h4>
                         </div>
                         <div class="fact__item">
                             <img src="../img/surgeries/check.png" alt="check" />
-                            <h4 class="black__subtitle">Al poner una cámara dentro del abdomen se pueden encontrar otros órganos y defectos en la pared abdominal.</h4>
+                            <h4 class="black__text">Al poner una cámara dentro del abdomen se pueden encontrar otros órganos y defectos en la pared abdominal.</h4>
                         </div>
                         <div class="fact__item">
                             <img src="../img/surgeries/check.png" alt="check" />
-                            <h4 class="black__subtitle">Mayor costo por los materiales utilizados.</h4>
+                            <h4 class="black__text">Mayor costo por los materiales utilizados.</h4>
                         </div>
                     </div>
                 </div>
@@ -390,7 +446,7 @@
         </div>
         <div class="image__container">
             <div class="image__overlay">
-                <img src="./img/surgeries/stomach.png" />
+                <img src="../img/surgeries/stomach.png" />
             </div>
         </div>
     </div>
@@ -398,7 +454,7 @@
 
     <!-- Reviews -->
     <div class="reviews__container">
-        <h2 class="blue__title">What our customer say</h2>
+        <h2 class="blue__title">Lo que nuestros clientes dicen</h2>
 
         <!-- <iframe class="reviews__iframe" src='https://widgets.sociablekit.com/google-reviews/iframe/87565' frameborder='0' width='100%'
             height='400'></iframe> -->
@@ -406,13 +462,12 @@
     </div>
 
 
-    <!-- Mab an appointment form -->
+    <!-- Map and appointment form -->
     <div class="appointment" id="appointment">
-        <h2 class="white__title">Book an Appointment!</h2>
-        <h5 class="lightblue__subtitle">Either book and Appointment or contact us to learn more about the services we
-            provide</h5>
+        <h2 class="white__title">¡Reserve una cita!</h2>
+        <h5 class="lightblue__subtitle">Reserve una cita o pregunte acerca de algún servicio</h5>
         <div class="appointment__container">
-
+    
             <!-- map -->
             <div class="mapouter">
                 <div class="gmap_canvas">
@@ -421,58 +476,66 @@
                         frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
-
+    
             <!-- image separator -->
             <div class="appointment__image">
-                <img src="./img/landing/dots.png" />
+                <img class="appointment__image1" src="../../../img/landing/dots.png" />
+                <img class="appointment__image2" src="../../../img/landing/dots_h.png" />
             </div>
-
+    
             <!-- form -->
             <div class="form__container">
                 <form>
                     <div class="inputs__container">
                         <div class="input_outer__container">
-                            <p class="form__label">NAME</p>
+                            <p class="form__label">NOMBRE</p>
                             <div class="input__container">
-                                <img src="./img/landing/user.svg" />
-                                <input placeholder="Name" type="text" id="name" class="input" />
+                                <img src="../../../img/landing/user.svg" />
+                                <input placeholder="Nombre" type="text" id="name" class="input" />
                             </div>
                         </div>
-
+    
                         <div class="input_outer__container">
-                            <p class="form__label">EMAIL</p>
+                            <p class="form__label">MAIL</p>
                             <div class="input__container">
-                                <img src="./img/landing/email.svg" />
-                                <input placeholder="Email" type="email" id="email" class="input" />
+                                <img src="../../../img/landing/email.svg" />
+                                <input placeholder="Mail" type="email" id="email" class="input" />
                             </div>
                         </div>
-
+    
                         <div class="input_outer__container">
-                            <p class="form__label">PHONE</p>
+                            <p class="form__label">TÉLEFONO</p>
                             <div class="input__container">
-                                <img src="./img/landing/phone.svg" />
-                                <input placeholder="Phone" type="text" id="name" class="input" />
+                                <img src="../../../img/landing/phone.svg" />
+                                <input placeholder="Telefono" type="text" id="name" class="input" />
                             </div>
                         </div>
-
+    
                         <div class="input_outer__container">
-                            <p class="form__label">TYPE OF SURGERY</p>
+                            <p class="form__label">TIPO DE HERNIA</p>
                             <div class="input__container">
-                                <img src="./img/landing/subject.svg" />
-                                <input placeholder="Type of surgery" type="email" id="email" class="input" />
+                                <img src="../../../img/landing/subject.svg" />
+                                <select name="hernias" class="input" id="hernias">
+                                    <option value="" default>Seleccionar tipo de hernia</option>
+                                    <option value="Hiatal">Hiatal</option>
+                                    <option value="Incisional">Incisional</option>
+                                    <option value="Umbilical">Umbilical</option>
+                                    <option value="Ventral">Ventral</option>
+                                    <option value="Inguinal">Inguinal</option>
+                                </select>
                             </div>
                         </div>
                     </div>
-
+    
                     <div class="textarea_outer__container">
-                        <p class="form__label">HOW CAN WE HELP YOU?</p>
+                        <p class="form__label">¿CÓMO TE PODEMOS AYUDAR?</p>
                         <div class="textarea__container">
-                            <img src="./img/landing/pencil.svg" />
-                            <textarea placeholder="Type your message" rows="4" id="message" class="input"></textarea>
+                            <img src="../../../img/landing/pencil.svg" />
+                            <textarea placeholder="Ingrese su mensaje" rows="4" id="message" class="input"></textarea>
                         </div>
                     </div>
-
-                    <button class="lightblue__button">SUBMIT</button>
+    
+                    <button class="lightblue__button">ENVIAR</button>
                 </form>
             </div>
         </div>
@@ -482,70 +545,67 @@
     <div class="footer">
         <div class="footer__container">
             <div class="footer__logo">
-                <img src="./img/logo.png" />
-                <h4 class="phrase">“Medicine can cure diseases but only doctors can cure patients”</h4>
+                <img src="../../../img/herniaLogo.png" />
+                <h4 class="phrase">“Medicina puede curar enfermedades pero solo doctores pueden curar pacientes”</h4>
             </div>
-
+            
             <div class="list__container">
-                <h5 class="black__subtitle">Links</h5>
+                <h5 class="black__subtitle">Enlaces</h5>
                 <ul class="footer__list">
                     <li>
-                        <a href="#" class="footer__link">Home</a>
+                        <a href="#header" class="footer__link">Inicio</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">About Us</a>
+                        <a href="https://ceciminv.com.mx/about/es" class="footer__link">Acerca de</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Services</a>
+                        <a href="https://ceciminv.com.mx/es/#services" class="footer__link">Servicios</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Hernia Clinic</a>
+                        <a href="#header" class="footer__link">Hernia Clinic</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Obesity</a>
+                        <a href="https://ceciminv.com.mx/obesity/es" class="footer__link">Obesidad</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Faq's</a>
+                        <a href="https://ceciminv.com.mx/faqs/es" class="footer__link">FAQ's</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="list__container">
+                <h5 class="black__subtitle">Hernias</h5>
+                <ul class="footer__list">
+                    <li>
+                        <a href="../hernias/hiatal/es/" class="footer__link">Hiatal</a>
+                    </li>
+                    <li>
+                        <a href="../hernias/inguinal/es/" class="footer__link">Inguinal</a>
+                    </li>
+                    <li>
+                        <a href="../hernias/incisional/es/" class="footer__link">Incisional</a>
+                    </li>
+                    <li>
+                        <a href="../hernias/umbilical/es" class="footer__link">Umbilical</a>
+                    </li>
+                    <li>
+                        <a href="../hernias/ventral/es/" class="footer__link">Ventral</a>
                     </li>
                 </ul>
             </div>
 
-            <div class="list__container">
-                <h5 class="black__subtitle">Surgeries</h5>
-                <ul class="footer__list">
-                    <li>
-                        <a href="#" class="footer__link">Gallblader</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Reflux</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Hernia</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Appendix</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Bariatric</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Colon</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="list__container">
+            <div class="list__container list__container3">
                 <h5 class="black__subtitle">Contact Us</h5>
                 <div class="contact__item">
-                    <img src="./img/landing/phone.svg" />
+                    <img src="../img/landing/phone.svg" />
                     <p>999 196 0827</p>
                 </div>
                 <div class="contact__item">
-                    <img src="./img/landing/email.svg" />
+                    <img src="../img/landing/email.svg" />
                     <p>drrodolfoaparicioponce@gmail.com</p>
                 </div>
                 <div class="contact__item">
-                    <img src="./img/landing/loc.svg" />
+                    <img src="../img/landing/loc.svg" />
                     <p>Torre milenium tercer piso #303 Mérida Yucatán México</p>
                 </div>
             </div>
@@ -568,29 +628,21 @@
         </div>
     </div>
 
-    <div class="goback"><a href="#header"><i class="fas fa-angle-up fa-3x"></i></a></div>
-
-
-    <div class="whatsapp"><a href="https://wa.me/529991869741" target="_blank">
-            <i class="fab fa-whatsapp fa-3x"></i>
-        </a></div>
+    <!-- Fixed links -->
+    <div class="fixed__links">
+        <div class="whatsapp"><a href="https://wa.me/529991869741" target="_blank">
+                <i class="fab fa-whatsapp fa-3x"></i>
+            </a></div>
+        <div class="goback"><a href="#header"><i class="fas fa-angle-up fa-3x"></i></a></div>
+    
+    </div>
 </body>
 <!---------------Javascript----------------->
+<!-- Menu -->
+<script src="../menu/js/jquery-2.1.1.js"></script>
+<script src="../menu/js/velocity.min.js"></script>
+<script src="../menu/js/main.js"></script> <!-- Resource jQuery -->
 
-<!--Var menu controler-->
-<script type="text/javascript">
-    function displayMenu() {
-        var display;
-        var card_menu = document.getElementById("card_menu");
-        display = card_menu.style.display;
-        if (display == "none") {
-            card_menu.style.display = "block";
-        }
-        else {
-            card_menu.style.sdisplay = "none";
-        }
-    }
-</script>
 <!--AOS animations controller-->
 <script src="js/aos copia 2.js"></script>
 <script type="text/javascript">
@@ -621,37 +673,5 @@
     });
 </script>
 
-<script>
-    /*
-        Query: https://maps.googleapis.com/maps/api/place/details/json?placeid={place_id}&key={api_key}
-        Complete query: https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJvRgpirJ3Vo8R5rc1FuwD1bo&key=AIzaSyDincrqHad7s7aAdR2ObmOCHlWT07lAmiM
-        PlaceId: ChIJvRgpirJ3Vo8R5rc1FuwD1bo 
-        API Key: AIzaSyDincrqHad7s7aAdR2ObmOCHlWT07lAmiM
-    */
-</script>
-
-
-<!-- Dropdown -->
-<script>
-    /* When the user clicks on the button, 
-    toggle between hiding and showing the dropdown content */
-    function dropdown() {
-        document.getElementById("myDropdown").classList.toggle("show");
-    }
-
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function (event) {
-        if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-            }
-        }
-    }
-</script>
 
 </html>
