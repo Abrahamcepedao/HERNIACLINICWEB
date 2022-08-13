@@ -21,7 +21,7 @@ body{
 /* <---------Landing--------->*/
 .landing__container {
 	width: 100%;
-	height: calc(100vh - 140px);
+	height: calc(100vh - 100px);
 	min-height: 700px;
 	background-image: url('../img/surgeries/lapa.jpg');
 	background-size: cover;
@@ -31,7 +31,7 @@ body{
 }
 .landing__overflow {
 	width: 100%;
-    height: calc(100vh - 140px);
+    height: calc(100vh - 100px);
 	min-height: 700px;
     background-color: rgba(26, 79, 209, 0.95);
     opacity: 0.95;
@@ -65,7 +65,8 @@ body{
 	overflow: hidden !important;
 }
 .image__circle {
-	width: 45vw;
+	width: 40vw;
+	max-width: 600px;
 	height: auto;
 	position: absolute;
 	bottom: 0px;	
@@ -73,10 +74,11 @@ body{
 	padding-bottom: 100px;
 }
 .image__doc {
-	width: 45vw;
+	width: 40vw;
+	max-width: 600px;
 	height: auto;
 	position: absolute;
-	bottom: 0px;
+	bottom: -2px;
 	text-align: center;
 }
 
@@ -409,6 +411,15 @@ body{
 	margin-right: 30px;
 	overflow: hidden;
 }
+.service__image div {
+	width: 100px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	border: 2px solid var(--blue__primary);
+}
 .services__item div {
 	padding: 30px;
 }
@@ -421,7 +432,7 @@ body{
 	margin-bottom: 20px;
 }
 .service__image img {
-	width: 100px;
+	width: 70px;
 	height: auto;
 	position: relative;
 }
@@ -610,10 +621,21 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-.image__overlay img {
-	width: 50%;
+.image__overlay div {
+	width: 450px;
+	height: 450px;
+	border-radius: 50%;
+	border: 6px solid var(--white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
+.image__overlay img {
+	width: 300px;
+}
+.image__container1 {
+	display: none;
+}
 
 /* <-----responsive-----> */
 /* 992 */
@@ -624,11 +646,26 @@ body{
 	.image__container {
 		height: 400px;
 	}
+	.image__overlay div {
+		width: 250px;
+		height: 250px;
+		border-radius: 50%;
+		border: 6px solid var(--white);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 	.image__overlay img {
-		width: 200px;
+		width: 150px;
 	}
 	.info__container {
 		height: auto;
+	}
+	.image__container1 {
+		display: block;
+	}
+	.image__container2 {
+		display: none;
 	}
 }
 /* 776 */
@@ -636,8 +673,11 @@ body{
 	.comparison__title__container h2 {
 		font-size: 30px;
 	}
-	.info__inner__container, .square__container {
+	.square__container {
 		padding: 20px;
+	}
+	.info__inner__container {
+		padding: 50px 20px;
 	}
 }
 
@@ -646,6 +686,7 @@ body{
 	.comparison__title__container  {
 		display: block;
 		text-align: center;
+		justify-content: center;
 	}
 	.comparison__title__container h2 {
 		margin-left: 0px;
@@ -653,6 +694,10 @@ body{
 	}
 	.comparison__rectangle {
 		margin: auto;
+	}
+	.comparison__rectangle2 {
+		width: 30px;
+		height: 4px;
 	}
 }
 

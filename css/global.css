@@ -150,6 +150,11 @@ font-family: 'Nunito', sans-serif;
 	font-weight: bold;
 	color: var(--white);
 }
+.blue__title__smaller {
+	font-size: 30px;
+	font-weight: bold;
+	color: var(--blue__primary);
+}
 .title__black__small {
 	font-size: 25px;
 	font-weight: bold;
@@ -167,9 +172,9 @@ font-family: 'Nunito', sans-serif;
 		font-size: 35px;
 	}
 	.blue__title {
-		font-size: 25px;
+		font-size: 30px;
 	}
-	.title__black__small {
+	.title__black__small, .blue__title__smaller {
 		font-size: 20px;
 	}
 }
