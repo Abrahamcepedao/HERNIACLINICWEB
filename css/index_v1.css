@@ -8,7 +8,8 @@ body{
 
 /* <---Color variables---> */
 :root {
-  --blue__primary: #1A4FD1;
+  //--blue__primary: #1A4FD1;
+  --blue__primary: #144271; //rgb(20, 66, 113)
   --blue__secondary: #C2DBFF;
   --gray: #766F6F;
   --lightgray: #F1F6FA;
@@ -33,7 +34,8 @@ body{
 	width: 100%;
     height: calc(100vh - 100px);
 	min-height: 700px;
-    background-color: rgba(26, 79, 209, 0.95);
+    //background-color: rgba(20, 66, 113, 0.95);
+	background-color: rgba(20, 66, 113, 0.975);
     opacity: 0.95;
     display: flex;
     justify-content: center;
@@ -596,9 +598,10 @@ body{
     align-items: center;
     margin-bottom: 25px;
 }
-.fact__item img {
-    width: 50px;
+.fact__item i {
+    font-size: 30px;
     margin-right: 20px;
+	color: var(--blue__primary);
 }
 .fact__item h4 {
     flex: 1;
@@ -616,7 +619,7 @@ body{
 .image__overlay {
 	width: 100%;
 	height: 100%;
-	background-color: rgba(26, 79, 209, 0.95);
+	background-color: rgba(20, 66, 113, 0.95);
 	display: flex;
 	justify-content: center;
 	align-items: center;

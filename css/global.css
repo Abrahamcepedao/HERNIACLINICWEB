@@ -9,7 +9,8 @@ html {
 }
 /* <---Color variables---> */
 :root {
-  --blue__primary: #1A4FD1;
+  //--blue__primary: #1A4FD1;
+  --blue__primary: #144271;
   --blue__secondary: #C2DBFF;
   --gray: #766F6F;
   --lightgray: #F1F6FA;
