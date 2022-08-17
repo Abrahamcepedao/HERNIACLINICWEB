@@ -34,7 +34,6 @@ body{
 	width: 100%;
     height: calc(100vh - 100px);
 	min-height: 700px;
-    //background-color: rgba(20, 66, 113, 0.95);
 	background-color: rgba(20, 66, 113, 0.975);
     opacity: 0.95;
     display: flex;

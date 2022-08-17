@@ -52,9 +52,12 @@
 
 /* image */
 .appointment__image {
-	flex: 0.1;
+	width: 80px;
 	margin-left: 30px;
 	margin-right: 30px;
+}
+.appointment__image img {
+	width: 80px;
 }
 .appointment__image2 {
 	display: none;
@@ -134,8 +137,15 @@
 	.appointment__container {
 		display: block;
 	}
+	.appointment__image {
+		margin: auto;
+		width: 100%;
+	}
 	.appointment__image1 {
 		display: none;
+	}
+	.appointment__image img {
+		width: 100%;
 	}
 	.appointment__image2 {
 		display: block;
@@ -234,7 +244,7 @@
 	font-size: 18px;
 }
 .contact__item i {
-	font-size: 25px;
+	font-size: 20px;
 	margin-right: 10px;
 	color: var(--blue__primary);
 }
@@ -242,6 +252,7 @@
 	flex: 1;
 	max-width: 190px;
 	line-break: anywhere;
+	line-height: 20px;
 }
 
 /* <-----responsive-----> */
